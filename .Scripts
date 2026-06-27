@@ -4,17 +4,17 @@ local WindUI = loadstring(game:HttpGet(
     "https://github.com/Footagesus/WindUI/releases/download/" .. Version .. "/main.lua"
 ))()
 
-local ICON = "rbxassetid://103223452179122"
+local ICON = "rbxassetid://71371252608531"
 
 local Window = WindUI:CreateWindow({
-    Title = "Tha Bronx",
+    Title = "Tha Bronx 3",
     Icon = ICON,
     Author = "Vexlora.xyz",
     Folder = "CertifiedHub",
 
     Size = UDim2.fromOffset(520, 300),
     Transparent = true,
-    Theme = "Dark",
+    Theme = "Emerald",
     Resizable = false,
 
     SideBarWidth = 145,
@@ -32,12 +32,16 @@ local Window = WindUI:CreateWindow({
 })
 
 Window:EditOpenButton({
-    Title = "Vexlora.xyz",
-    Icon = "rbxassetid://103223452179122",
-
-    CornerRadius = UDim.new(0, 16),
+    Title = "Vexlora┃Paid",
+    Icon = "rbxassetid://71371252608531",
+    CornerRadius = UDim.new(0,16),
     StrokeThickness = 2,
-    Color = ColorSequence.new(Color3.fromRGB(0, 255, 80)),
+    Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 155, 125)),
+    ColorSequenceKeypoint.new(0.35, Color3.fromRGB(0, 190, 145)),
+    ColorSequenceKeypoint.new(0.70, Color3.fromRGB(0, 220, 165)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 245, 185))
+}),
 
     OnlyMobile = false,
     Enabled = true,
@@ -4787,5 +4791,11 @@ UpdateLogsTab:Paragraph({
 UpdateLogsTab:Paragraph({
     Title = "Update Logs 6/25/2026",
     Desc = "v0.15\n• Fixed Bullet Image\n• Fixed Noclip Flight\n• Adding More Dances shortly \n• Working On RPG bombs",
+    Icon = "bell"
+})
+
+UpdateLogsTab:Paragraph({
+    Title = "Update Logs 6/27/2026",
+    Desc = "v0.15\n• Updated Ui\n",
     Icon = "bell"
 })
